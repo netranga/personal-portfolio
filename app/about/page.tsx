@@ -60,9 +60,9 @@ export default function AboutPage() {
             <Image src="/research.jpeg" alt="Research Paper 1" width={450} height={250} className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-1/2 shadow" />
             <div className="flex flex-col items-start gap-4">
               <div className="text-zinc-200 text-xl font-medium">Research Paper</div>
-              <Link href="https://repository.isls.org/bitstream/1/6627/1/2593-2596.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-400 hover:text-blue-300">
+              <Link href="https://repository.isls.org/bitstream/1/6627/1/2593-2596.pdf" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-400 transition duration-200">
                 <FileText size={24} />
-                <span className="cursor-pointer">View Paper</span> {/* Made this a clickable button */}
+                <span className="cursor-pointer">View Paper</span>
               </Link>
             </div>
           </div>
