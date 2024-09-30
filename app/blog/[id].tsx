@@ -13,16 +13,15 @@ const blogPosts: BlogPost[] = [
     id: '1',
     title: 'My Journey as a Data Scientist',
     content: `
-      <p>As I reflect on my journey as a data scientist, I'm struck by the incredible evolution of the field and my own growth within it. From my early days of grappling with basic statistical concepts to now leveraging advanced machine learning algorithms, the path has been both challenging and rewarding.</p>
+      <p>As I reflect on my journey as a data scientist...</p>
       <h2>The Beginning</h2>
-      <p>My journey began during my undergraduate years at UNC Chapel Hill. The foundation in statistics and analytics I received there was invaluable, but it was just the beginning. The real learning started when I stepped into the professional world.</p>
+      <p>My journey began during my undergraduate years...</p>
       <h2>Challenges and Growth</h2>
-      <p>One of the biggest challenges I faced was the rapid pace of technological change in the field. It seemed like every few months, there was a new tool or technique to master. But with each new challenge came an opportunity to grow and expand my skillset.</p>
+      <p>One of the biggest challenges I faced...</p>
       <h2>The Rewards</h2>
-      <p>The most rewarding aspect of being a data scientist is the impact our work can have. From helping businesses make data-driven decisions to contributing to scientific research, the applications of data science are vast and meaningful.</p>
+      <p>The most rewarding aspect of being a data scientist...</p>
       <h2>Looking Forward</h2>
-      <p>As I look to the future, I'm excited about the continued evolution of data science, particularly in areas like artificial intelligence and machine learning. The potential for these technologies to solve complex problems and improve lives is immense.</p>
-      <p>This journey has taught me that in data science, learning never stops. And that's exactly what makes this field so exciting and rewarding.</p>
+      <p>As I look to the future...</p>
     `,
     date: '2024-09-30'
   },
