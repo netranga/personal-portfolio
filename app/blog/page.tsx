@@ -32,23 +32,25 @@ const blogPosts: BlogPost[] = [
 
 export default function BlogList() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white p-8">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
       <Navigation />
-      <h1 className="text-4xl font-bold mb-8 text-center">Blog</h1>
-      <div className="max-w-2xl mx-auto space-y-6">
-        {blogPosts.map((post) => (
-          <Link href={`/blog/${post.id}`} key={post.id} className="block transition-transform hover:scale-105">
-            <Card className="bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
-              <CardHeader>
-                <CardTitle className="text-xl font-semibold">{post.title}</CardTitle>
-                <p className="text-sm text-gray-400">{post.date}</p>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-300">{post.excerpt}</p>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
+      <div className="pt-32 px-8">
+        <h1 className="text-4xl font-bold mb-8 text-left">My Thoughts and Learnings</h1>
+        <div className="max-w-2xl space-y-6">
+          {blogPosts.map((post) => (
+            <Link href={`/blog/${post.id}`} key={post.id} className="block transition-transform hover:scale-105">
+              <Card className="bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
+                <CardHeader>
+                  <CardTitle className="text-xl font-semibold">{post.title}</CardTitle>
+                  <p className="text-sm text-gray-400">{post.date}</p>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-300">{post.excerpt}</p>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   )
