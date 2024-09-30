@@ -30,7 +30,8 @@ export const Navigation: React.FC = () => {
 					<div className="flex justify-between gap-8">
 						{[
 							{ name: "Projects", href: "/projects", color: "from-blue-400 to-blue-500" },
-							{ name: "About Me", href: "/about", color: "from-teal-400 to-teal-500" },
+							{ name: "Blog", href: "/blog", color: "from-teal-400 to-teal-500" },
+							{ name: "About Me", href: "/about", color: "from-purple-400 to-purple-500" },
 							{ name: "Contact", href: "/contact", color: "from-purple-400 to-purple-500" },
 						].map((item) => (
 							<Link
