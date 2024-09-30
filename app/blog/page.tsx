@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Navigation } from "../components/nav";
 
 interface BlogPost {
   id: string
@@ -32,6 +33,7 @@ const blogPosts: BlogPost[] = [
 export default function BlogList() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white p-8">
+      <Navigation />
       <h1 className="text-4xl font-bold mb-8 text-center">Blog</h1>
       <div className="max-w-2xl mx-auto space-y-6">
         {blogPosts.map((post) => (
