@@ -7,6 +7,7 @@ interface BlogPost {
   title: string
   excerpt: string
   date: string
+  url: string // Added url property
 }
 
 const blogPosts: BlogPost[] = [
@@ -14,19 +15,22 @@ const blogPosts: BlogPost[] = [
     id: '1',
     title: 'My Journey as a Data Scientist',
     excerpt: 'Exploring the challenges and rewards of working in data science...',
-    date: '2024-09-30'
+    date: '2024-09-30',
+    url: 'https://help.medium.com/hc/en-us/articles/115004746707-Your-profile-page-URL' // Add your Medium URL here
   },
   {
     id: '2',
     title: 'Creative Coding: Where Art Meets Technology',
     excerpt: 'How I combine my passion for creativity with programming...',
-    date: '2024-09-25'
+    date: '2024-09-25',
+    url: 'https://help.medium.com/hc/en-us/articles/115004746707-Your-profile-page-URL' // Add your Medium URL here
   },
   {
     id: '3',
     title: 'Real Estate Market Analysis Using Data Science',
     excerpt: 'Leveraging data science techniques to gain insights into real estate trends...',
-    date: '2024-09-20'
+    date: '2024-09-20',
+    url: 'https://help.medium.com/hc/en-us/articles/115004746707-Your-profile-page-URL' // Add your Medium URL here
   },
 ]
 
@@ -38,7 +42,7 @@ export default function BlogList() {
         <h1 className="text-4xl font-bold mb-8 text-left">My Thoughts and Learnings</h1>
         <div className="max-w-2xl space-y-6">
           {blogPosts.map((post) => (
-            <Link href={`/blog/${post.id}`} key={post.id} className="block transition-transform hover:scale-105">
+            <Link href={post.url} key={post.id} className="block transition-transform hover:scale-105" target="_blank" rel="noopener noreferrer">
               <Card className="bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
                 <CardHeader>
                   <CardTitle className="text-xl font-semibold">{post.title}</CardTitle>
