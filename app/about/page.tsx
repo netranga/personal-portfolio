@@ -6,7 +6,6 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { FileText } from 'lucide-react';
 
-
 const AnimatedSection = dynamic(() => import('../components/AnimatedSection'), { ssr: false });
 
 interface TimelineEntry {
@@ -63,12 +62,12 @@ export default function AboutPage() {
               <div className="text-zinc-200 text-xl font-medium">Research Paper</div>
               <Link href="https://repository.isls.org/bitstream/1/6627/1/2593-2596.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-400 hover:text-blue-300">
                 <FileText size={24} />
-                <span>View Paper</span>
+                <span className="cursor-pointer">View Paper</span> {/* Made this a clickable button */}
               </Link>
             </div>
           </div>
         </div>
-      ), 
+      ),
     },
     {
       title: "2019",

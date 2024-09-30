@@ -49,7 +49,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                 {item.title}
               </h3>
-              <Card className="transition-transform transform hover:scale-105">
+              <Card className="transition-transform transform hover:scale-105 p-4 md:p-6 lg:p-8" style={{ width: 'calc(100% + 2in)', marginLeft: '-2in', marginRight: '0.5in' }}>
                 {item.content}
               </Card>
             </div>
