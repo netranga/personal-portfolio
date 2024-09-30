@@ -28,18 +28,20 @@ export const Navigation: React.FC = () => {
 			>
 				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
 					<div className="flex justify-between gap-8">
-						<Link
-							href="/projects"
-							className="duration-200 text-zinc-400 hover:text-zinc-100"
-						>
-							Projects
-						</Link>
-						<Link
-							href="/contact"
-							className="duration-200 text-zinc-400 hover:text-zinc-100"
-						>
-							Contact
-						</Link>
+						{[
+							{ name: "Projects", href: "/projects", color: "from-blue-400 to-blue-500" },
+							{ name: "About Me", href: "/about", color: "from-teal-400 to-teal-500" },
+							{ name: "Contact", href: "/contact", color: "from-purple-400 to-purple-500" },
+						].map((item) => (
+							<Link
+								key={item.href}
+								href={item.href}
+								className="relative text-lg duration-200 text-zinc-300 hover:text-zinc-100 group"
+							>
+								{item.name}
+								<span className={`absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r ${item.color} scale-x-0 transition-transform group-hover:scale-x-100`} />
+							</Link>
+						))}
 					</div>
 
 					<Link
