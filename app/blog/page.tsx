@@ -32,7 +32,7 @@ const blogPosts: BlogPost[] = [
 
 export default function BlogList() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black text-white">
       <Navigation />
       <div className="pt-32 px-8">
         <h1 className="text-4xl font-bold mb-8 text-left">My Thoughts and Learnings</h1>
