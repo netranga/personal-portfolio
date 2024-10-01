@@ -180,17 +180,12 @@ export default function AboutPage() {
           <ul className="list-disc list-outside text-neutral-400 text-sm md:text-base mb-4 pl-5">
             <li className="mb-2">
               <span className="inline">
-                Led AI trainings for <span className="text-zinc-200 font-semibold">100+ individuals</span>
+                Led AI trainings for <span className="text-zinc-200 font-semibold">100+ individuals, part of various local non-profit organizations</span>
               </span>
             </li>
             <li className="mb-2">
               <span className="inline">
-                Contributed to <span className="text-zinc-200 font-semibold">nonprofit outreach</span>
-              </span>
-            </li>
-            <li className="mb-2">
-              <span className="inline">
-                Educated community leaders on <span className="text-zinc-200 font-semibold">AI implementation</span> in their companies
+                Educated community leaders on <span className="text-zinc-200 font-semibold">best practices for using AI in their day-to-day work</span>
               </span>
             </li>
           </ul>
