@@ -50,7 +50,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 {item.title}
               </h3>
               <Card className="transition-transform transform hover:scale-105 p-4 md:p-6 lg:p-8 bg-transparent group">
-                <div className="relative p-4 duration-700 group-hover:bg-zinc-800/50 rounded-lg">
+                <div className="relative p-4 duration-700 group-hover:bg-zinc-800/50 rounded-lg group-hover:scale-105">
                   {item.content}
                   <span className="absolute inset-0 w-full h-full bg-gradient-to-b from-transparent to-zinc-800 opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
                 </div>
